@@ -54,12 +54,43 @@ module.exports = {
 
                 }
 
-            }
+            },
 
+            // {
 
+            //     test: /\.(png|jpeg|svg)$/,
 
+            //     use: {
 
-    
+            //         loader: "url-loader",
+
+            //         options: {
+
+            //             name: "./assets/[name].[ext]",
+            //             limit: 30000
+
+            //         }
+
+            //     }
+
+            // }
+
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+
+                use: {
+
+                    loader: "file-loader",
+
+                    options: {
+
+                        name: "./assets/[name].[ext]"
+
+                    }
+                }
+
+              }
+
         ]
     }
 
