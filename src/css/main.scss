@@ -56,6 +56,10 @@ section{
     width: 1200px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1600px) {
+        width:800px;        
+    }
+
     h1{
         color: white;
     }
@@ -102,6 +106,12 @@ section{
     max-width: 50%;
     height: calc(100vh - 79px);
     overflow: hidden;
+
+    @media screen and (max-width: 1550px){
+
+        font-size: 2em;
+
+    }
 
     h1{
         margin-top: 20vh;
