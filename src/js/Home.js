@@ -12,18 +12,34 @@ export default class Home extends React.Component{
             <div id="home-container">
 
                 <Navbar />
-            
+
                 <TitlePanel />
 
-                <SectionHeading heading={"Projects"}/>
+                <section>
 
-                <Projects projects={this.props.projects}/>
+                    <SectionHeading heading={"Projects"}/>
 
-                <SectionHeading heading={"About Me"}/>
+                    <Projects projects={this.props.projects}/>
 
-                <AboutMe />
+                </section>
 
-                <SectionHeading heading={"Contact Me"}/>
+                <section className="maroon">
+
+                    <SectionHeading heading={"About Me"}/>
+
+                    <AboutMe />
+
+                </section>
+
+                <section >
+
+                    <SectionHeading heading={"Contact Me"}/>
+
+                    <Contact />
+
+                </section>                
+
+
 
 
             </div>
@@ -106,7 +122,7 @@ class Projects extends React.Component{
 
         return(
 
-            <div className="projects-container">
+            <div className="projects-container section-contents">
 
                 {this.props.projects.map((project, index) => {
 
@@ -237,10 +253,35 @@ class AboutMe extends React.Component{
     
         return(
     
-            <div id="about-me">
+            <div id="about-me" className="section-contents">
 
-               <p> hey </p>
+                <p> My name is Connor Dowson and I'm a 20 year old student at the 
+                University of Gloucestershire. I am an aspiring Web Developer and
+                have completed the projects above either in my free time
+                or for University. </p>
 
+
+               <div id="my-picture"> </div>
+
+
+            </div>
+        );
+    
+    }
+    
+}
+
+//Contact me section
+
+class Contact extends React.Component{
+    
+    render(){
+    
+        return(
+    
+            <div id="contact" className="section-contents">
+
+                <a href="mailto:connormwdowson@gmail.com"> connormwdowson@gmail.com </a>
 
             </div>
         );
