@@ -13,3 +13,5 @@ ReactDOM.render(
     document.getElementById('app')
     
 );
+
+require("./mobile.js")

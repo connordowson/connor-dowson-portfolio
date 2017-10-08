@@ -2,6 +2,8 @@ import React from 'react'
 import './../css/main.scss'
 import SVGInline from "react-svg-inline"
 import SVGIllustration from "./../assets/home-illustration.svg"
+import cdLogo from "./../assets/cd-logo.svg"
+
 
 // require("./../assets/tsd-image.jpeg")
 
@@ -61,8 +63,10 @@ class Navbar extends React.Component{
         return(
     
             <nav id="navbar">
+
+               <div id="nav-logo"> <SVGInline svg={ cdLogo } /> </div>
+
     
-                <h1> Connor Dowson </h1>
 
                 <ul>
                     <a> Home </a>
@@ -92,6 +96,7 @@ class TitlePanel extends React.Component{
 
                 <SVGInline svg={ SVGIllustration } />
 
+                <div id="mobile-spacer"></div>
 
 
             </div>
