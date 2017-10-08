@@ -76,7 +76,7 @@ module.exports = {
             // }
 
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(gif|png|jpe?g)$/i,
 
                 use: {
 
@@ -87,6 +87,17 @@ module.exports = {
                         name: "./assets/[name].[ext]"
 
                     }
+                }
+
+            },
+
+            {
+                test: /\.svg$/,
+
+                use: {
+
+                    loader: "raw-loader"
+
                 }
 
             }

@@ -1,5 +1,8 @@
 import React from 'react'
 import './../css/main.scss'
+import SVGInline from "react-svg-inline"
+import SVGIllustration from "./../assets/home-illustration.svg"
+
 // require("./../assets/tsd-image.jpeg")
 
 //Main component which will contain all other child components
@@ -86,6 +89,10 @@ class TitlePanel extends React.Component{
             <div id="title-panel">
     
                 <h1> Connor Dowson: Computing Student University of Gloucestershire </h1>
+
+                <SVGInline svg={ SVGIllustration } />
+
+
 
             </div>
     
