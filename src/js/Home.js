@@ -22,7 +22,7 @@ export default class Home extends React.Component{
 
                 <section>
 
-                    <SectionHeading heading={"Projects"}/>
+                    <SectionHeading heading={"Projects"} id="projects"/>
 
                     <Projects projects={this.props.projects}/>
 
@@ -38,7 +38,7 @@ export default class Home extends React.Component{
 
                 <section >
 
-                    <SectionHeading heading={"Contact Me"}/>
+                    <SectionHeading heading={"Contact Me"} id="contact"/>
 
                     <Contact />
 
@@ -69,9 +69,9 @@ class Navbar extends React.Component{
     
 
                 <ul>
-                    <a> Home </a>
-                    <a> Projects </a>
-                    <a> Contact </a>
+                    <a href="#home"> Home </a>
+                    <a href="#projects"> Projects </a>
+                    <a href="#contact"> Contact </a>
 
                 </ul>
     
@@ -96,9 +96,6 @@ class TitlePanel extends React.Component{
 
                 <SVGInline svg={ SVGIllustration } />
 
-                <div id="mobile-spacer"></div>
-
-
             </div>
     
         );
@@ -114,7 +111,7 @@ class SectionHeading extends React.Component{
     
         return(
     
-            <h1 className="section-heading">
+            <h1 className="section-heading" id={this.props.id}>
                     
                 {this.props.heading}
 
