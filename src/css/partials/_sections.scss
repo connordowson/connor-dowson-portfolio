@@ -1,0 +1,40 @@
+section{
+    background: $bg-zig-zag, $purple;
+}
+
+.section-contents{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+
+    @media screen and (max-width: 500px){
+        max-width: 400px; 
+        padding: 20px; 
+    }
+
+    @media screen and (max-width: 360px){
+        max-width: 80%x;
+        padding: 10px;  
+    }
+
+}
+
+.maroon{
+    background-color: $maroon;
+}
+
+
+.section-heading{
+    text-align: center;
+    color: $orange;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-shadow: 3px 3px 0 #702915;
+    font-size: 3em;
+
+    @media screen and (max-width: 500px){
+        padding-bottom: 0px;        
+        
+    }
+
+}

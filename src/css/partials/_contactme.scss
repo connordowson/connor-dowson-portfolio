@@ -1,0 +1,55 @@
+
+#contact {
+    text-align: center;
+    margin-bottom: 5vh;
+
+    @media screen and (max-width: 500px){
+        margin-bottom: 50px;          
+    }
+
+
+    a{
+        text-decoration: none;
+        margin-bottom: 50px;
+        font-size: 4em;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        position: relative;
+        width: 1020px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 500px){
+            width: 80%;
+            font-size: 1.4em;  
+        }
+
+        @media screen and (max-width: 400px){
+            width: 80%;
+            font-size: 1.2em;  
+        }
+
+        @media screen and (max-width: 360px) {
+            width: 80%;
+            font-size: 1em;  
+        }
+        
+
+        &:after{
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            background-color: #F3724D;
+            height: 10px;
+            width: 0;
+            content: "";
+            transition: all 0.7s;
+            transition-timing-function: cubic-bezier(0.69, 0.38, 0.17, 1.3);
+        }
+
+        &:hover:after{
+            width: 100%;
+        }        
+    }
+}

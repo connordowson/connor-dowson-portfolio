@@ -1,0 +1,30 @@
+//Remove default padding and margins
+*{
+    padding: 0;
+    margin: 0;
+}
+
+//Font variables
+$main-font: 'Montserrat', sans-serif;
+
+//Image variables
+$bg-zig-zag: url("./../assets/bg.png");
+
+//color variables
+$off-white: #f9f9f9;
+$maroon: #790133;
+$orange: #F3724D;
+$purple: #31102e;
+
+body{
+    font-family: $main-font;
+    background: $bg-zig-zag, $purple;
+}
+
+p, a{
+    color: white;
+}
+
+h1,h2{
+    font-family: $main-font;
+}

@@ -20,6 +20,17 @@ const projects = [
         demo: "http://www.connordowson.com/walloffame",
         code: "https://github.com/connordowson/music-wall-of-fame"
 
+    },
+
+    {
+
+        title: "Pokédex",
+        image: "pokedex.jpg",
+        description: "A project I created using the Discogs API. A NodeJS script downloads each album cover by using its ID, and then they are all displayed on the page. I learnt a lot about using Maps and Keys creating this project.",
+        skills: ['HTML5', 'CSS3', 'Sass', 'Webpack', 'ReactJS', 'NodeJS'],
+        demo: "http://www.connordowson.com/pokedex",
+        code: "https://github.com/connordowson/pokedex"
+
     }
 
 ];
