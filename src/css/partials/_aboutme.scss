@@ -4,6 +4,15 @@
     display: flex;
     justify-content: space-between;
 
+    @include iPad{
+        width: 600px;
+
+        p{
+            font-size: 1.2em;
+            align-self: center;
+        }
+    }
+
     @media screen and (max-width: 500px){
         width: 70%;
         flex-direction: column;

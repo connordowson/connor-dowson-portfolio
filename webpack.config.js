@@ -1,5 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -103,6 +105,17 @@ module.exports = {
             }
 
         ]
-    }
+    },
+
+    plugins: [
+        // Copy the images folder and optimize all the images
+        new CopyWebpackPlugin([{
+
+            from: "./src/assets/", to: "./assets/"
+        }]),
+
+        new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
+
+      ]
 
 }

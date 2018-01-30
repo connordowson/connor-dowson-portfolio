@@ -4,7 +4,6 @@ import SVGInline from "react-svg-inline"
 import SVGIllustration from "./../assets/home-illustration.svg"
 import cdLogo from "./../assets/cd-logo.svg"
 
-
 // require("./../assets/tsd-image.jpeg")
 
 //Main component which will contain all other child components
@@ -242,9 +241,13 @@ class ProjectLinks extends React.Component{
     
             <div className="project-buttons"> 
                 
-                <a href={this.props.demo} target="_blank"> View Demo </a>
+                <a href={this.props.demo} target="_blank"> View Demo  <i data-feather="eye"></i> </a>
                 
-                <a href={this.props.code} target="_blank"> View Code </a>
+                <a href={this.props.code} target="_blank"> View Code <i data-feather="github"></i> </a>
+
+                <script>
+                    feather.replace()
+                </script>
                 
             </div>
     

@@ -20,6 +20,16 @@
         padding-top: 20px;        
     }
 
+    //iPad queries
+    @include iPad{
+        width: 80%;
+    }
+
+    //iPad landscape
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    }
+
     h1{
         color: white;
 
