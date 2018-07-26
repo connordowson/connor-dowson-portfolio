@@ -100,8 +100,10 @@
         .project-buttons{
 
             margin-bottom: 20px;
+            box-sizing: border-box;
 
             a{
+                box-sizing: border-box;
                 color: #790133;
                 padding: 10px;
                 font-weight: 700;
@@ -141,6 +143,7 @@
                     display: block;
                     margin-bottom: 0px; 
                     text-align: center;
+                    width: 100%;
                     
                 }
 

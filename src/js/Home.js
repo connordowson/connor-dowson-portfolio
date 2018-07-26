@@ -71,6 +71,7 @@ class Navbar extends React.Component{
                     <a href="#home"> Home </a>
                     <a href="#projects"> Projects </a>
                     <a href="#contact"> Contact </a>
+                    <a href="/blog/"> Blog </a>
 
                 </ul>
     
@@ -158,6 +159,7 @@ class ProjectCard extends React.Component{
 
         this.refs.screenshot.style.background = "url('./assets/" + this.props.projectImage + "')";
         this.refs.screenshot.style.backgroundSize = "cover";
+        this.refs.screenshot.style.backgroundPosition = "center";
 
     }
 
@@ -290,7 +292,7 @@ class Contact extends React.Component{
     
         return(
     
-            <div id="contact" className="section-contents">
+            <div id="contact-section" className="section-contents">
 
                 <a href="mailto:connormwdowson@gmail.com"> connormwdowson@gmail.com </a>
 
